@@ -20,7 +20,7 @@ export default function AdminDashboard() {
     {
       id: "pricing",
       name: "Tarification",
-      description: "Plans tarifaires (200, 500, 2490 MAD...)",
+      description: "Plans tarifaires (9, 19, 49€...)",
       status: "✅ Actif",
     },
     {
@@ -190,11 +190,11 @@ export default function AdminDashboard() {
               <div className="pt-6 border-t border-primary/10">
                 <h3 className="text-lg font-semibold mb-4">Tarification</h3>
                 <div className="space-y-3">
-                  <p className="text-sm text-slate-400">✅ Plan Micro: 200 MAD</p>
-                  <p className="text-sm text-slate-400">✅ Plan Essentiel: 500 MAD</p>
-                  <p className="text-sm text-slate-400">✅ Plan Startup: 2,490 MAD</p>
-                  <p className="text-sm text-slate-400">✅ Plan Business: 4,990 MAD</p>
-                  <p className="text-sm text-slate-400">✅ Plan Enterprise: 7,990+ MAD</p>
+                  <p className="text-sm text-slate-400">✅ Plan Micro: 9€</p>
+                  <p className="text-sm text-slate-400">✅ Plan Essentiel: 19€</p>
+                  <p className="text-sm text-slate-400">✅ Plan Startup: 49€</p>
+                  <p className="text-sm text-slate-400">✅ Plan Business: 99€</p>
+                  <p className="text-sm text-slate-400">✅ Plan Enterprise: 199€+</p>
                 </div>
                 <Button className="mt-4 w-full">
                   <Zap className="w-4 h-4 mr-2" />

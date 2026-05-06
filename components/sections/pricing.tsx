@@ -7,8 +7,8 @@ export default function Pricing() {
   const plans = [
     {
       name: "Micro",
-      price: "200",
-      currency: "MAD",
+      price: "9",
+      currency: "£",
       period: "une seule page",
       description: "Parfait pour débuter",
       features: [
@@ -22,8 +22,8 @@ export default function Pricing() {
     },
     {
       name: "Essentiel",
-      price: "500",
-      currency: "MAD",
+      price: "19",
+      currency: "£",
       period: "3 pages",
       description: "Pour les petits projets",
       features: [
@@ -38,8 +38,8 @@ export default function Pricing() {
     },
     {
       name: "Startup",
-      price: "2,490",
-      currency: "MAD",
+      price: "49",
+      currency: "£",
       period: "ou 415 MAD/mois",
       description: "Idéal pour les petits commerces",
       features: [
@@ -54,9 +54,9 @@ export default function Pricing() {
     },
     {
       name: "Business",
-      price: "4,990",
-      currency: "MAD",
-      period: "ou 832 MAD/mois",
+      price: "1,490",
+      currency: "£",
+      period: "ou 1,490 £/mois",
       description: "Solution complète pour votre entreprise",
       features: [
         "Site web 10-15 pages",
@@ -71,8 +71,8 @@ export default function Pricing() {
     },
     {
       name: "Enterprise",
-      price: "7,990",
-      currency: "MAD",
+      price: "3,490",
+      currency: "£",
       period: "à partir",
       description: "Solutions sur mesure à grande échelle",
       features: [

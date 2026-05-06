@@ -1,10 +1,7 @@
-# Next.js Dev Server Fix ✅ COMPLETED
+# Price Update Task (MAD → Euro, Beginner Prices)
 
-## Summary:
-1. Deleted conflicting lockfiles ✅  
-2. Ran `npm install` (182 packages added) ✅  
-3. Started `npm run dev` - Server running at http://localhost:3000 ✅  
+## Steps:
+- [x] 1. Update prices and currency in components/sections/pricing.tsx
+- [x] 2. Update price mentions in app/admin/page.tsx  
+- [x] 3. Verify changes and complete task
 
-Dev server is live with Next.js 16.0.10 (Turbopack). Open http://localhost:3000 in browser.
-
-**Note:** Minor lockfile warning (external package-lock.json detected); safe to ignore or investigate if issues arise.
