@@ -72,19 +72,10 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition">
                   Case Studies
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-primary transition">
-                  Templates
-                </a>
-              </li>
+
             </ul>
           </div>
 
@@ -93,23 +84,13 @@ export default function Footer() {
             <h4 className="font-semibold text-foreground">Company</h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
-                <a href="../../Services" className="hover:text-primary transition">
+                <a href="../../about" className="hover:text-primary transition">
                   About
                 </a>
               </li>
               <li>
-                <a href="../../Services" className="hover:text-primary transition">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="../../Contact" className="hover:text-primary transition">
+                <a href="../../contact" className="hover:text-primary transition">
                   Contact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition">
-                  Press
                 </a>
               </li>
             </ul>
@@ -120,23 +101,8 @@ export default function Footer() {
             <h4 className="font-semibold text-foreground">Legal</h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a href="../../contact" className="hover:text-primary transition">
                   Privacy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition">
-                  Terms
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition">
-                  Cookies
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition">
-                  DPA
                 </a>
               </li>
             </ul>
@@ -154,18 +120,12 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-sm text-slate-500">© 2026 WebCraft Studio. Developed by <a className="hover:text-primary transition font-semibold" href="https://codescandy.com" target="_blank">Codescandy</a> • Distributed by <a className="hover:text-primary transition font-semibold" href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
+          <p className="text-sm text-slate-500">© 2026 Danaya Digital. Developed by <a className="hover:text-primary transition font-semibold" href="https://codescandy.com" target="_blank">Codescandy</a> • Distributed by <a className="hover:text-primary transition font-semibold" href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
-            <a href="#" className="text-slate-400 hover:text-primary transition" aria-label="GitHub">
+            <a href="https://github.com/B-A-D-TECH" className="text-slate-400 hover:text-primary transition" aria-label="GitHub">
               <Github className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-slate-400 hover:text-primary transition" aria-label="Twitter">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-slate-400 hover:text-primary transition" aria-label="LinkedIn">
-              <Linkedin className="w-5 h-5" />
             </a>
           </div>
         </div>
