@@ -12,7 +12,7 @@ export default function Footer() {
             <h4 className="font-semibold text-foreground">Services</h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a href="/services" className="hover:text-primary transition">
                   Web Design
                 </a>
               </li>
