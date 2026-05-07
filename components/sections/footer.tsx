@@ -17,7 +17,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a href="../../services" className="hover:text-primary transition">
                   Development
                 </a>
               </li>
@@ -27,7 +27,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a href="../../services" className="hover:text-primary transition">
                   Maintenance
                 </a>
               </li>
@@ -39,22 +39,22 @@ export default function Footer() {
             <h4 className="font-semibold text-foreground">Industries</h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a href="../../services" className="hover:text-primary transition">
                   Small Business
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a href="../../services" className="hover:text-primary transition">
                   Healthcare
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a href="../../services" className="hover:text-primary transition">
                   E-commerce
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a href="../../services" className="hover:text-primary transition">
                   Startups
                 </a>
               </li>
@@ -93,17 +93,17 @@ export default function Footer() {
             <h4 className="font-semibold text-foreground">Company</h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a href="../../Services" className="hover:text-primary transition">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a href="../../Services" className="hover:text-primary transition">
                   Careers
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition">
+                <a href="../../Contact" className="hover:text-primary transition">
                   Contact
                 </a>
               </li>
