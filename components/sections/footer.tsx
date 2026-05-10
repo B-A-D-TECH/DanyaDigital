@@ -1,6 +1,7 @@
 "use client"
 
 import { Github, Twitter, Linkedin } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -113,14 +114,21 @@ export default function Footer() {
         <div className="border-t border-slate-700/50 pt-8 flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo/Brand */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-xs font-semibold text-primary-foreground">CS</span>
-            </div>
-            <span className="font-semibold text-foreground">WebCraft Studio</span>
+             <div className="flex items-center gap-1">
+            
+                    <Image
+                      src="/BiTech_Professional_Logo.svg"
+                      alt="BiTech Digital"
+                      width={200}
+                      height={120}
+                      className="object-contain"
+                    />
+            
+              </div>
           </div>
 
           {/* Copyright */}
-          <p className="text-sm text-slate-500">© 2026 Danaya Digital. Developed by <a className="hover:text-primary transition font-semibold" href="https://codescandy.com" target="_blank">Codescandy</a> • Distributed by <a className="hover:text-primary transition font-semibold" href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
+          <p className="text-sm text-slate-500">© 2026 BiTech Digital. Developed by <a className="hover:text-primary transition font-semibold" href="https://codescandy.com" target="_blank">Codescandy</a> • Distributed by <a className="hover:text-primary transition font-semibold" href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
 
           {/* Social Links */}
           <div className="flex items-center gap-4">

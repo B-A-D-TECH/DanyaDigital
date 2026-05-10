@@ -33,7 +33,7 @@ export default function Solution() {
           <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow">
             One Service. Complete Website Solution.
           </h2>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Everything you need to build your website, simplified.
           </p>
         </div>
@@ -43,10 +43,10 @@ export default function Solution() {
           {features.map((feature, index) => {
             const Icon = feature.icon
             return (
-              <div key={index} className="bg-primary/10 p-8 rounded-xl glassmorphism border border-primary/20 hover:border-accent transition group">
+              <div key={index} className="bg-primary/10 p-8 rounded-xl glassmorphism border border-primary/20 hover:border-accent transition group" >
                 <Icon className="w-10 h-10 text-primary group-hover:text-accent transition mb-4" />
                 <h3 className="text-xl font-semibold text-foreground mb-2">{feature.title}</h3>
-                <p className="text-slate-400">{feature.description}</p>
+                <p className="text-muted-foreground">{feature.description}</p>
               </div>
             )
           })}

@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+
 import { Button } from "@/components/ui/button"
 import { Shield } from "lucide-react"
 
@@ -25,18 +27,23 @@ export default function FinalCTA() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold "
-            >
-              Get Started
-            </Button>
-            <Button
-              size="lg"
-              className="border border-white hover:bg-white hover:text-primary-foreground  text-foreground bg-transparent cursor-pointer"
-            >
-              Contact Us
-            </Button>
+            <Link href="/contact">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold "
+              >
+                Get Started
+              </Button>
+            </Link>
+
+            <Link href="/contact">
+              <Button
+                size="lg"
+                className="border border-white hover:bg-white hover:text-primary-foreground  text-foreground bg-transparent cursor-pointer"
+              >
+                Contact Us
+              </Button>
+            </Link>
           </div>
 
           <p className="text-sm text-slate-400">Free consultation. No obligation. Let's discuss your project.</p>

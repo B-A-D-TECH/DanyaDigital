@@ -1,0 +1,16 @@
+<svg id="bitech-svg" width="300" height="150" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Symbole : Le B et le T fusionnés avec un signal réseau -->
+            <rect x="40" y="40" width="80" height="80" rx="16" fill="#0F172A"></rect>
+            
+            <!-- Icône Node / Signal interne -->
+            <circle cx="80" cy="80" r="12" fill="#38BDF8"></circle>
+            <path d="M80 55C86.6274 55 92 60.3726 92 67" stroke="white" stroke-width="4" stroke-linecap="round"></path>
+            <path d="M80 45C91.0457 45 100 53.9543 100 65" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"></path>
+
+            <!-- Typographie -->
+            <text x="140" y="105" font-family="Inter" font-weight="900" font-size="64" fill="#0F172A">Bi</text>
+            <text x="210" y="105" font-family="Inter" font-weight="900" font-size="64" fill="#38BDF8">Tech</text>
+            
+            <!-- Slogan -->
+            <text x="142" y="135" font-family="Inter" font-weight="600" font-size="14" fill="#64748B" letter-spacing="4">DIGITAL MALI</text>
+        </svg>

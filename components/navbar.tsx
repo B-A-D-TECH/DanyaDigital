@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Menu, X, Search, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem } from "@/components/ui/navigation-menu"
+import Image from "next/image"
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -21,14 +22,20 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 lg:px-0">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-             <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-xs font-semibold text-primary-foreground">WC</span>
-            </div>
-            <span className="font-semibold text-foreground">Dnaya Digital</span>
-          </div>
-          </Link>
+    <Link href="/" className="flex items-center group">
+  <div className="flex items-center gap-1">
+
+        <Image
+          src="/BiTech_Professional_Logo.svg"
+          alt="BiTech Digital"
+          width={200}
+          height={120}
+          className="object-contain"
+        />
+
+  </div>
+    
+    </Link>
 
           {/* Navigation Menu */}
           <NavigationMenu>

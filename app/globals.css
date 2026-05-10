@@ -4,43 +4,53 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated to match reference image: deep navy background with neon cyan and magenta accents */
+  /* Palette alignée sur public/BiTech_Professional_Logo.svg */
+  /* Logo: fond #0F172A, cyan #38BDF8, texte/slogan gris #64748B */
   --background: #0a0015;
   --foreground: #ffffff;
   --card: #1a0a2e;
   --card-foreground: #ffffff;
   --popover: #0a0015;
   --popover-foreground: #ffffff;
-  --primary: #00ff99;
-  --primary-foreground: #0a0015;
-  --secondary: #ff00ff;
+
+  --primary: #38BDF8;
+  --primary-foreground: #0F172A;
+
+  --secondary: #64748B;
   --secondary-foreground: #ffffff;
+
   --muted: #4a4a6a;
   --muted-foreground: #b0b0d0;
-  --accent: #00ffff;
-  --accent-foreground: #0a0015;
+
+  --accent: #38BDF8;
+  --accent-foreground: #0F172A;
+
   --destructive: #ff1744;
   --destructive-foreground: #ffffff;
+
   --border: #2a1a4a;
   --input: #1a0a2e;
-  --ring: #00ff99;
-  --chart-1: #00ff99;
+  --ring: #38BDF8;
+
+  --chart-1: #38BDF8;
   --chart-2: #ff00ff;
-  --chart-3: #00ffff;
+  --chart-3: #38BDF8;
   --chart-4: #ff1744;
   --chart-5: #ff00ff;
+
   --radius: 0.75rem;
+
   --sidebar: #0a0015;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #00ff99;
-  --sidebar-primary-foreground: #0a0015;
-  --sidebar-accent: #00ffff;
-  --sidebar-accent-foreground: #0a0015;
+  --sidebar-primary: #38BDF8;
+  --sidebar-primary-foreground: #0F172A;
+  --sidebar-accent: #38BDF8;
+  --sidebar-accent-foreground: #0F172A;
   --sidebar-border: #2a1a4a;
-  --sidebar-ring: #00ff99;
+  --sidebar-ring: #38BDF8;
 
   /* Explicit neon colors for glowing effects */
-  --neon-cyan: #00ffff;
+  --neon-cyan: #38BDF8;
   --neon-green: #00ff99;
   --neon-magenta: #ff00ff;
   --neon-pink: #ff1493;
@@ -53,32 +63,40 @@
   --card-foreground: #ffffff;
   --popover: #0a0015;
   --popover-foreground: #ffffff;
-  --primary: #00ff99;
-  --primary-foreground: #0a0015;
-  --secondary: #ff00ff;
+
+  --primary: #38BDF8;
+  --primary-foreground: #0F172A;
+
+  --secondary: #64748B;
   --secondary-foreground: #ffffff;
+
   --muted: #4a4a6a;
   --muted-foreground: #b0b0d0;
-  --accent: #00ffff;
-  --accent-foreground: #0a0015;
+
+  --accent: #38BDF8;
+  --accent-foreground: #0F172A;
+
   --destructive: #ff1744;
   --destructive-foreground: #ffffff;
+
   --border: #2a1a4a;
   --input: #1a0a2e;
-  --ring: #00ff99;
-  --chart-1: #00ff99;
+  --ring: #38BDF8;
+
+  --chart-1: #38BDF8;
   --chart-2: #ff00ff;
-  --chart-3: #00ffff;
+  --chart-3: #38BDF8;
   --chart-4: #ff1744;
   --chart-5: #ff00ff;
+
   --sidebar: #0a0015;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #00ff99;
-  --sidebar-primary-foreground: #0a0015;
-  --sidebar-accent: #00ffff;
-  --sidebar-accent-foreground: #0a0015;
+  --sidebar-primary: #38BDF8;
+  --sidebar-primary-foreground: #0F172A;
+  --sidebar-accent: #38BDF8;
+  --sidebar-accent-foreground: #0F172A;
   --sidebar-border: #2a1a4a;
-  --sidebar-ring: #00ff99;
+  --sidebar-ring: #38BDF8;
 }
 
 @theme inline {

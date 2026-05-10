@@ -8,7 +8,7 @@ import Link from "next/link"
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0a0015] via-[#1a0a2e] to-[#0a0015]"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0F172A] via-[#1a0a2e] to-[#0F172A]"></div>
 
       {/* Decorative glow orbs */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-accent/10 rounded-full blur-3xl pointer-events-none"></div>

@@ -1,6 +1,7 @@
 "use client"
 
 import { Check } from "lucide-react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export default function Pricing() {
@@ -93,7 +94,7 @@ export default function Pricing() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow">Tarifs Attractifs & Généreux</h2>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">Paiements flexibles adaptés à votre budget • Sans frais cachés • Forfaits conçus pour les entreprises marocaines</p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Paiements flexibles adaptés à votre budget • Sans frais cachés • Forfaits conçus pour les entreprises marocaines</p>
         </div>
 
         {/* Pricing Cards */}
@@ -116,7 +117,7 @@ export default function Pricing() {
               )}
 
               <h3 className="text-lg lg:text-2xl font-semibold text-foreground mb-2">{plan.name}</h3>
-              <p className="text-slate-400 text-xs lg:text-sm mb-4 lg:mb-6">{plan.description}</p>
+              <p className="text-muted-foreground text-xs lg:text-sm mb-4 lg:mb-6">{plan.description}</p>
 
               {/* Price */}
               <div className="mb-4 lg:mb-6">
@@ -124,26 +125,27 @@ export default function Pricing() {
                   <span className="text-2xl lg:text-4xl font-semibold text-primary">{plan.price}</span>
                   <span className="text-sm lg:text-lg text-primary">{plan.currency}</span>
                 </div>
-                {plan.period && <span className="text-slate-400 text-xs lg:text-sm">{plan.period}</span>}
+                {plan.period && <span className="text-muted-foreground text-xs lg:text-sm">{plan.period}</span>}
               </div>
 
               {/* CTA Button */}
-              <Button
-                className={`w-full mb-4 lg:mb-8 rounded-full text-sm ${
-                  plan.highlighted
-                    ? "bg-primary hover:bg-primary/90 text-primary-foreground"
-                    : "bg-slate-700 hover:bg-slate-600 text-foreground"
-                }`}
-              >
-                Get Started
-              </Button>
-
+              <Link href="/contact" className="block">
+                <Button
+                  className={`w-full mb-4 lg:mb-8 rounded-full text-sm ${
+                    plan.highlighted
+                      ? "bg-primary hover:bg-primary/90 text-primary-foreground"
+                      : "bg-muted/30 hover:bg-muted/50 text-foreground"
+                  } `}
+                >
+                  Get Started
+                </Button>
+              </Link>
               {/* Features List */}
               <div className="space-y-2 lg:space-y-4">
                 {plan.features.map((feature, i) => (
                   <div key={i} className="flex items-start gap-2 lg:gap-3">
                     <Check className="w-4 h-4 lg:w-5 lg:h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300 text-xs lg:text-sm">{feature}</span>
+                    <span className="text-muted-foreground text-xs lg:text-sm">{feature}</span>
                   </div>
                 ))}
               </div>
