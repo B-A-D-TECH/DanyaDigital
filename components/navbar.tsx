@@ -102,7 +102,7 @@ export default function Navbar() {
                 className="bg-gradient-to-r from-primary to-accent text-background font-semibold  rounded-full px-6  hover:shadow-lg  transition-all"
               >
                 <Shield className="w-4 h-4" />
-                Rejoindre maintenant
+                Rejoindre
               </Button>
             </Link>
           </div>
