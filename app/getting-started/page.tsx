@@ -64,7 +64,7 @@ export default function GettingStarted() {
           {/* Welcome */}
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">
-              Bienvenue sur <span className="text-primary">WebCraft Studio</span>
+Bienvenue sur <span className="text-primary">BiTech Digital</span>
             </h2>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto">
               Ce guide vous montre comment gérer et personnaliser votre site web sans expérience technique.

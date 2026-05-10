@@ -46,7 +46,7 @@ export default function About() {
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-semibold mb-6 neon-text-glow">
-              About <span className="text-accent">WebCraft Studio</span>
+About <span className="text-accent">BiTech Digital</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Crafting stunning, professional websites for businesses worldwide with cutting-edge design and development solutions.

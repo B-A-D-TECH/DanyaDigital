@@ -128,7 +128,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-sm text-slate-500">© 2026 BiTech Digital. Developed by <a className="hover:text-primary transition font-semibold" href="https://codescandy.com" target="_blank">Codescandy</a> • Distributed by <a className="hover:text-primary transition font-semibold" href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
+<p className="text-sm text-slate-500">© 2026 BiTech Digital.</p>
 
           {/* Social Links */}
           <div className="flex items-center gap-4">

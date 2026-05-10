@@ -6,33 +6,33 @@ export default function Features() {
   const features = [
     {
       icon: Search,
-      title: "Responsive Design",
-      description: "Mobile-first design that works perfectly on all devices",
+      title: "Design Responsive",
+      description: "Un design mobile-first qui fonctionne parfaitement sur tous les appareils",
     },
     {
       icon: Cpu,
-      title: "Custom Development",
-      description: "Tailored solutions built with modern technologies",
+      title: "Développement Sur Mesure",
+      description: "Des solutions adaptées, construites avec des technologies modernes",
     },
     {
       icon: Lock,
-      title: "SEO Optimization",
-      description: "Search engine friendly websites that rank higher",
+      title: "Optimisation SEO",
+      description: "Des sites pensés pour les moteurs de recherche, avec un meilleur positionnement",
     },
     {
       icon: BarChart3,
-      title: "Performance Monitoring",
-      description: "Fast loading speeds and optimal user experience",
+      title: "Suivi des Performances",
+      description: "Des chargements rapides et une expérience utilisateur optimale",
     },
     {
       icon: Lock,
-      title: "Secure Hosting",
-      description: "Reliable hosting with SSL certificates included",
+      title: "Hébergement Sécurisé",
+      description: "Un hébergement fiable avec certificats SSL inclus",
     },
     {
       icon: Users,
-      title: "Content Management",
-      description: "Easy-to-use systems for updating your website",
+      title: "Gestion du Contenu",
+      description: "Des outils simples pour mettre à jour votre site",
     },
   ]
 
@@ -40,9 +40,9 @@ export default function Features() {
     <section className="relative py-24 px-4 overflow-hidden bg-primary/10">
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow">Core Features</h2>
+          <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow">Fonctionnalités Clés</h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            Everything your website needs in one comprehensive service
+            Tout ce dont votre site a besoin, regroupé dans un service complet
           </p>
         </div>
 

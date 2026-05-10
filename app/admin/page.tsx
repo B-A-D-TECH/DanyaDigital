@@ -164,7 +164,7 @@ export default function AdminDashboard() {
                     <label className="block text-sm font-medium mb-2">Nom du site</label>
                     <input
                       type="text"
-                      defaultValue="WebCraft Studio"
+defaultValue="BiTech Digital"
                       className="w-full px-4 py-2 bg-background border border-primary/20 rounded-lg text-foreground"
                     />
                   </div>

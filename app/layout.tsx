@@ -3,7 +3,6 @@ import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 
 import Navbar from "@/components/navbar"
-import DownloadButton from "@/components/sections/download"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -11,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata = {
   title: "BiTech Digital",
-  description: "Professional Website Creation Services",
+  description: "Services de création de sites web professionnels",
   icons: {
     icon: [
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
@@ -34,11 +33,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="fr" className="dark">
       <body className={`font-sans antialiased`}>
         <Navbar />
         {children}
-         <DownloadButton />
+        
     
       </body>
     </html>
