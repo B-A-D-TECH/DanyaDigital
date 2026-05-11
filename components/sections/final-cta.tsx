@@ -18,11 +18,11 @@ export default function FinalCTA() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow leading-14">
-            Get Your Professional Website Today
+            Avoir ton site Web professionnel Aujourd'hui
           </h2>
 
           <p className="text-lg text-slate-400 max-w-xl mx-auto">
-            Transform your business with a stunning, high-converting website. Start building your online presence now.
+            Transformer votre entreprise en une entreprise professionnelle en ligne.
           </p>
 
           {/* CTA Buttons */}
@@ -32,7 +32,7 @@ export default function FinalCTA() {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold "
               >
-                Get Started
+                Commencer
               </Button>
             </Link>
 
@@ -41,12 +41,12 @@ export default function FinalCTA() {
                 size="lg"
                 className="border border-white hover:bg-white hover:text-primary-foreground  text-foreground bg-transparent cursor-pointer"
               >
-                Contact Us
+                Contactez Nous
               </Button>
             </Link>
           </div>
 
-          <p className="text-sm text-slate-400">Free consultation. No obligation. Let's discuss your project.</p>
+          <p className="text-sm text-slate-400">Consultation gratuite. Pas d'engagement. Discutons de votre projet.</p>
         </div>
       </div>
     </section>

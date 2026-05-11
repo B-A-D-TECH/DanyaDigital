@@ -4,20 +4,20 @@ import { Briefcase, Building2, Stethoscope, DollarSign, ShoppingCart, Wifi } fro
 
 export default function UseCases() {
   const useCases = [
-    { icon: Building2, title: "Small Businesses", description: "Professional online presence" },
-    { icon: Briefcase, title: "Startups", description: "Launch fast with stunning websites" },
-    { icon: Stethoscope, title: "Healthcare", description: "Build trust with patients online" },
-    { icon: DollarSign, title: "Financial Services", description: "Secure, professional web presence" },
-    { icon: ShoppingCart, title: "E-commerce", description: "Convert visitors to customers" },
-    { icon: Wifi, title: "Remote Businesses", description: "Connect with clients globally" },
+    { icon: Building2, title: "Petites Entereprises", description: "Présence professionnelle en ligne" },
+    { icon: Briefcase, title: "Startups", description: "Lancement rapide avec des sites web impressionnants" },
+    { icon: Stethoscope, title: "Santé", description: "Construire la confiance avec les patients en ligne" },
+    { icon: DollarSign, title: "Services Financiers", description: "Présence web sécurisée et professionnelle" },
+    { icon: ShoppingCart, title: "E-commerce", description: "Convertir les visiteurs en clients" },
+    { icon: Wifi, title: "Entreprises à Distance", description: "Se connecter avec des clients à l'échelle mondiale" },
   ]
 
   return (
     <section className="relative py-24 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow">Who We Build For</h2>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">Professional websites for every business type</p>
+          <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow">Pour qui nous construisons</h2>
+          <p className="text-lg text-slate-400 max-w-2xl mx-auto">Sites web professionnels pour tous les types d'entreprises</p>
         </div>
 
         {/* Use Cases Grid */}
