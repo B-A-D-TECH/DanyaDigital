@@ -5,23 +5,23 @@ import { Shield, Zap, Eye, BarChart3 } from "lucide-react"
 export default function Solution() {
   const features = [
     {
-      title: "Custom Design & Development",
-      description: "Tailored websites built to match your brand and business needs",
+      title: "Meilleure Design & Expérience Utilisateur",
+      description: "Des sites web modernes et élégants qui captivent les visiteurs et augmentent les conversions",
       icon: Eye,
     },
     {
-      title: "Responsive & Mobile-First",
-      description: "Websites that look great and work perfectly on all devices",
+      title: "Responsive avec tous les appareils",
+      description: "Des sites web qui ont l'air bien et fonctionnent parfaitement sur tous les appareils",
       icon: Zap,
     },
     {
-      title: "SEO Optimization",
-      description: "Built-in search engine optimization to help customers find you",
+      title: "Optimisation SEO",
+      description: "Créé avec les meilleures pratiques SEO pour aider votre site à être trouvé sur Google, même avec un domaine Vercel gratuit.",
       icon: Shield,
     },
     {
-      title: "Fast Loading & Performance",
-      description: "Optimized for speed and performance to keep visitors engaged",
+      title: "Rapidité & Performance",
+      description: "Optimisé pour des temps de chargement rapides et des performances de haut niveau, offrant une expérience utilisateur fluide et agréable",
       icon: BarChart3,
     },
   ]
@@ -31,10 +31,10 @@ export default function Solution() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow">
-            One Service. Complete Website Solution.
+            Une Service. Un Site Web complet pour votre entreprise.
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to build your website, simplified.
+            Tout ce que tu as besoin pour la création de ton site web simplifié.
           </p>
         </div>
 

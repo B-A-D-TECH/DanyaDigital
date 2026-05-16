@@ -1,36 +1,47 @@
 'use client'
 
+import type { Metadata } from 'next'
 import { Shield, Award, Users, Zap } from 'lucide-react'
 import Footer from '@/components/sections/footer'
 
+export const metadata: Metadata = {
+  title: 'À propos | BiTech Digital',
+  description:
+    'Découvrez BiTech Digital, votre agence web spécialisée en création de sites professionnels, référencement SEO et design performant au Maroc et au Mali.',
+};
+
 export default function About() {
   const stats = [
-    { label: 'Years of Experience', value: '15+' },
-    { label: 'Websites Delivered', value: '1000+' },
-    { label: 'Satisfied Clients', value: '500+' },
-    { label: 'Creative Team', value: '50+' },
+    { label: "Années d'expérience", value: '15+' },
+    { label: 'Sites livrés', value: '1000+' },
+    { label: 'Clients satisfaits', value: '500+' },
+    { label: 'Équipe créative', value: '50+' },
   ]
 
   const values = [
     {
       icon: Shield,
-      title: 'Design Excellence',
-      description: 'Every project prioritizes stunning visuals and user-friendly interfaces that captivate audiences.'
+      title: "Excellence en design",
+      description:
+        "Chaque projet privilégie des visuels remarquables et des interfaces conviviales qui captivent votre audience.",
     },
     {
       icon: Users,
-      title: 'Client-Centric',
-      description: 'We listen to our clients and continuously improve our designs to meet their unique needs.'
+      title: "Approche centrée client",
+      description:
+        "Nous écoutons nos clients et améliorons continuellement nos créations pour répondre à leurs besoins spécifiques.",
     },
     {
       icon: Award,
-      title: 'Quality Assurance',
-      description: 'Industry-leading standards with responsive design, SEO optimization, and performance excellence.'
+      title: 'Assurance qualité',
+      description:
+        'Des standards d’excellence avec un design responsive, l’optimisation SEO et des performances de haut niveau.',
     },
     {
       icon: Zap,
-      title: 'Creative Innovation',
-      description: 'Cutting-edge technologies and modern frameworks for websites that stand out and perform.'
+      title: 'Innovation créative',
+      description:
+        'Des technologies à la pointe et des frameworks modernes pour des sites qui se démarquent et performent.',
     },
   ]
 
@@ -42,44 +53,52 @@ export default function About() {
       </div>
 
       <div className="relative z-10 pt-32 pb-20">
-        {/* Hero Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-semibold mb-6 neon-text-glow">
-About <span className="text-accent">BiTech Digital</span>
+              À propos <span className="text-accent">BiTech Digital</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Crafting stunning, professional websites for businesses worldwide with cutting-edge design and development solutions.
+              Conception de sites web professionnels et modernes pour les entreprises du monde
+              entier, grâce à des solutions de design et de développement innovantes.
             </p>
           </div>
 
-          {/* Mission Statement */}
-          <div className="mb-10 ">
-            <h2 className="text-3xl font-semibold  mb-6">Our Mission</h2>
+          <div className="mb-10">
+            <h2 className="text-3xl font-semibold mb-6">Notre mission</h2>
             <p className="text-lg text-foreground leading-relaxed">
-              To empower businesses of all sizes with beautifully designed, fully functional websites that drive growth and success. We believe that great design should be accessible, and that creating an online presence shouldn't require extensive technical knowledge.
+              Donner aux entreprises de toutes tailles des sites web esthétiques, complets et
+              performants pour favoriser la croissance et le succès. Nous pensons qu’un bon
+              design doit être accessible, et qu’une présence en ligne ne devrait pas exiger de
+              connaissances techniques approfondies.
             </p>
           </div>
 
-          {/* Stats Grid */}
           <div className="grid md:grid-cols-4 gap-6 mb-20">
             {stats.map((stat, idx) => (
-              <div key={idx} className="bg-card/50 border-2 border-accent/30 rounded-xl p-8 text-center  hover:border-accent transition-colors">
+              <div
+                key={idx}
+                className="bg-card/50 border-2 border-accent/30 rounded-xl p-8 text-center hover:border-accent transition-colors"
+              >
                 <div className="text-4xl font-semibold text-accent mb-2">{stat.value}</div>
-                <div className="text-xs font-medium text-muted-foreground uppercase tracking-widest">{stat.label}</div>
+                <div className="text-xs font-medium text-muted-foreground uppercase tracking-widest">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
 
-          {/* Values Section */}
-          <h2 className="text-3xl font-semibold mb-8">Our Values</h2>
+          <h2 className="text-3xl font-semibold mb-8">Nos valeurs</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {values.map((value, idx) => {
               const Icon = value.icon
               return (
-                <div key={idx} className="bg-card/50 border-2 border-primary/30 rounded-xl p-8 hover:border-accent transition-colors">
+                <div
+                  key={idx}
+                  className="bg-card/50 border-2 border-primary/30 rounded-xl p-8 hover:border-accent transition-colors"
+                >
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center  flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
                       <Icon className="w-6 h-6 text-background" />
                     </div>
                     <div>
@@ -98,3 +117,4 @@ About <span className="text-accent">BiTech Digital</span>
     </main>
   )
 }
+

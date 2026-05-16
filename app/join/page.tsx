@@ -41,12 +41,12 @@ export default function JoinNow() {
   }
 
   const benefits = [
-    'Responsive design tools',
-    'AI-powered optimization',
-    'Automated deployment',
-    '24/7 expert support',
-    'Performance analytics',
-    'Custom dashboard',
+    'Design Responsive Outils',
+    'IA Automation',
+    'Déploiement en 1 clic',
+    '24/7 Support Expert',
+    'Analyse de Performance',
+    'Dashboard de qualité',
   ]
 
   return (
@@ -61,10 +61,10 @@ export default function JoinNow() {
           {step !== 4 && (
             <div className="text-center mb-16">
               <h1 className="text-5xl md:text-6xl font-sbold mb-6 ">
-                Join <span className="text-accent">Cybersheild</span>
+                Rejoindre <span className="text-accent">BiTech Digital</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Get started with professional website creation in minutes
+                Commencer Avec un site Web professionnel crée en minutes
               </p>
             </div>
           )}
@@ -73,7 +73,7 @@ export default function JoinNow() {
             {/* Benefits Sidebar */}
             <div className="md:col-span-1">
               <div className="bg-card/50 border-2 border-primary/30 rounded-2xl p-8  sticky top-40">
-                <h3 className="text-xl font-sbold text-foreground mb-6">What You Get</h3>
+                <h3 className="text-xl font-sbold text-foreground mb-6">Vos avantages</h3>
                 <ul className="space-y-4">
                   {benefits.map((benefit, idx) => (
                     <li key={idx} className="flex items-start gap-3">
@@ -93,12 +93,12 @@ export default function JoinNow() {
                   <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center  mx-auto mb-6">
                     <Check className="w-10 h-10 text-background" />
                   </div>
-                  <h2 className="text-3xl font-sbold text-accent mb-4">Welcome Aboard!</h2>
+                  <h2 className="text-3xl font-sbold text-accent mb-4">Bienvenue !</h2>
                   <p className="text-muted-foreground mb-8 text-lg">
-                    Your account has been created successfully. Check your email to verify your account and start your free trial.
+                    Ton compte a été crée avec Succès. Vérifiez votre email.
                   </p>
                   <Button className="bg-gradient-to-r from-primary to-accent text-background font-sbold  rounded-full ">
-                    Go to Dashboard
+                    Allez au Dashboard
                   </Button>
                 </div>
               ) : (
@@ -118,11 +118,11 @@ export default function JoinNow() {
                   {/* Step 1: Company Info */}
                   {step === 1 && (
                     <div className="space-y-6">
-                      <h2 className="text-2xl font-sbold text-foreground mb-8">Company Information</h2>
+                      <h2 className="text-2xl font-sbold text-foreground mb-8">Information sur l'entreprise</h2>
                       
                       <div>
                         <label htmlFor="company" className="block text-sm  text-foreground mb-2 ">
-                          Company Name
+                          Nom de l'entreprise
                         </label>
                         <input
                           type="text"
@@ -132,13 +132,13 @@ export default function JoinNow() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-3 bg-background/50 border-2 border-primary/30 rounded-lg text-foreground focus:outline-none focus:border-accent transition-colors"
-                          placeholder="Your Company"
+                          placeholder="Nom de l'entreprise"
                         />
                       </div>
 
                       <div>
                         <label htmlFor="industry" className="block text-sm  text-foreground mb-2 ">
-                          Industry
+                          Secteur d'activité
                         </label>
                         <select
                           id="industry"
@@ -148,19 +148,19 @@ export default function JoinNow() {
                           required
                           className="w-full px-4 py-3 bg-background/50 border-2 border-primary/30 rounded-lg text-foreground focus:outline-none focus:border-accent transition-colors"
                         >
-                          <option value="">Select Industry</option>
+                          <option value="">Sélectionnez un secteur</option>
                           <option value="finance">Finance</option>
-                          <option value="healthcare">Healthcare</option>
-                          <option value="retail">Retail</option>
+                          <option value="healthcare">Santé</option>
+                          <option value="retail"></option>
                           <option value="technology">Technology</option>
-                          <option value="government">Government</option>
-                          <option value="other">Other</option>
+                          <option value="government">Gouvernment</option>
+                          <option value="other">Autres</option>
                         </select>
                       </div>
 
                       <div>
                         <label htmlFor="employees" className="block text-sm  text-foreground mb-2 ">
-                          Company Size
+                          Taille de l'Entreprise
                         </label>
                         <select
                           id="employees"
@@ -170,11 +170,11 @@ export default function JoinNow() {
                           required
                           className="w-full px-4 py-3 bg-background/50 border-2 border-primary/30 rounded-lg text-foreground focus:outline-none focus:border-accent transition-colors"
                         >
-                          <option value="">Select Company Size</option>
-                          <option value="1-50">1-50 employees</option>
-                          <option value="51-200">51-200 employees</option>
-                          <option value="201-1000">201-1,000 employees</option>
-                          <option value="1000+">1,000+ employees</option>
+                          <option value="">Sélectionner la taille de l'Entreprise</option>
+                          <option value="1-50">1-50 employées</option>
+                          <option value="51-200">51-200 employées</option>
+                          <option value="201-1000">201-1,000 employées</option>
+                          <option value="1000+">1,000+ employées</option>
                         </select>
                       </div>
                     </div>
@@ -183,12 +183,12 @@ export default function JoinNow() {
                   {/* Step 2: Contact Info */}
                   {step === 2 && (
                     <div className="space-y-6">
-                      <h2 className="text-2xl font-sbold text-foreground mb-8">Contact Information</h2>
+                      <h2 className="text-2xl font-sbold text-foreground mb-8">Information Contact</h2>
                       
                       <div className="grid md:grid-cols-2 gap-6">
                         <div>
                           <label htmlFor="firstName" className="block text-sm  text-foreground mb-2 ">
-                            First Name
+                            Prénom
                           </label>
                           <input
                             type="text"
@@ -198,12 +198,12 @@ export default function JoinNow() {
                             onChange={handleChange}
                             required
                             className="w-full px-4 py-3 bg-background/50 border-2 border-primary/30 rounded-lg text-foreground focus:outline-none focus:border-accent transition-colors"
-                            placeholder="John"
+                            placeholder="Aly"
                           />
                         </div>
                         <div>
                           <label htmlFor="lastName" className="block text-sm  text-foreground mb-2 ">
-                            Last Name
+                            Nom
                           </label>
                           <input
                             type="text"
@@ -213,14 +213,14 @@ export default function JoinNow() {
                             onChange={handleChange}
                             required
                             className="w-full px-4 py-3 bg-background/50 border-2 border-primary/30 rounded-lg text-foreground focus:outline-none focus:border-accent transition-colors"
-                            placeholder="Doe"
+                            placeholder="Diarra"
                           />
                         </div>
                       </div>
 
                       <div>
                         <label htmlFor="email" className="block text-sm  text-foreground mb-2 ">
-                          Email Address
+                          Address Email
                         </label>
                         <input
                           type="email"
@@ -230,13 +230,13 @@ export default function JoinNow() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-3 bg-background/50 border-2 border-primary/30 rounded-lg text-foreground focus:outline-none focus:border-accent transition-colors"
-                          placeholder="john@company.com"
+                          placeholder="Diarra@company.com"
                         />
                       </div>
 
                       <div>
                         <label htmlFor="phone" className="block text-sm  text-foreground mb-2 ">
-                          Phone Number
+                          Numéro de téléphone
                         </label>
                         <input
                           type="tel"
@@ -259,7 +259,7 @@ export default function JoinNow() {
                       
                       <div>
                         <label htmlFor="password" className="block text-sm  text-foreground mb-2 ">
-                          Password
+                          Mots de passe
                         </label>
                         <input
                           type="password"
@@ -272,13 +272,13 @@ export default function JoinNow() {
                           placeholder="••••••••"
                         />
                         <p className="text-xs text-muted-foreground mt-2">
-                          Must be at least 8 characters with , lowercase, and numbers
+                          Au minimum 8 character , en minuscule, et chiffre.
                         </p>
                       </div>
 
                       <div>
                         <label htmlFor="confirmPassword" className="block text-sm  text-foreground mb-2 ">
-                          Confirm Password
+                          Confirmez votre Mots de passe
                         </label>
                         <input
                           type="password"
@@ -295,7 +295,7 @@ export default function JoinNow() {
                       <div className="flex items-start gap-3 p-4 bg-primary/10 rounded-lg border border-primary/30">
                         <input type="checkbox" id="terms" required className="w-4 h-4 mt-1" />
                         <label htmlFor="terms" className="text-sm text-muted-foreground">
-                          I agree to the Terms of Service and Privacy Policy
+                          Je suis d'accord avec les termes des services
                         </label>
                       </div>
                     </div>
@@ -319,22 +319,22 @@ export default function JoinNow() {
                         onClick={handleNext}
                         className="flex-1 bg-gradient-to-r from-primary to-accent text-background font-semibold  rounded-full "
                       >
-                        Next <ArrowRight className="w-4 h-4" />
+                        Continue <ArrowRight className="w-4 h-4" />
                       </Button>
                     ) : (
                       <Button
                         type="submit"
                         className="flex-1 bg-gradient-to-r from-primary to-accent text-background font-sbold  rounded-full "
                       >
-                        Create Account
+                        Créer un compte
                       </Button>
                     )}
                   </div>
 
                   <p className="text-center text-sm text-muted-foreground mt-6">
-                    Already have an account?{' '}
+                    J'ai déjà un compte?{' '}
                     <a href="#" className="text-accent hover:text-primary transition-colors font-sbold">
-                      Sign In
+                      connectez vous
                     </a>
                   </p>
                 </form>

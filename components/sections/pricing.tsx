@@ -137,7 +137,7 @@ export default function Pricing() {
                       : "bg-muted/30 hover:bg-muted/50 text-foreground"
                   } `}
                 >
-                  Get Started
+                  Contactez-nous
                 </Button>
               </Link>
               {/* Features List */}

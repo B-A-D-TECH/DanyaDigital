@@ -8,29 +8,29 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "How long does it take to build a website?",
+      question: "Combien de temps faut-il pour construire mon site web?",
       answer:
-        "Timeline depends on complexity. Basic websites take 1-2 weeks, professional sites take 2-4 weeks, and enterprise solutions take 4-8 weeks. We provide regular updates throughout the process.",
-    },
-    // {
-    //   question: "Do you provide hosting and domain setup?",
-    //   answer:
-    //     "Yes. We handle everything including domain registration, hosting setup, SSL certificates, and ongoing maintenance. You get a complete turnkey solution.",
-    // },
-    {
-      question: "Will my website work on mobile devices?",
-      answer:
-        "Absolutely. All our websites are built mobile-first and responsive. They automatically adapt to any screen size, from phones to tablets to desktops.",
+        "La durée dépend de la complexité. Les sites web basiques prennent 1-2 semaines, les sites professionnels prennent 2-4 semaines, et les solutions d'entreprise prennent 4-8 semaines. Nous fournissons des mises à jour régulières tout au long du processus.",
     },
     {
-      question: "Do you include SEO optimization?",
+      question: "Fournissez-vous l'hébergement et la configuration du domaine?",
       answer:
-        "Yes. We implement on-page SEO, meta tags, structured data, and performance optimizations. We also provide guidance on content and link building strategies.",
+        "Oui. Nous gérons tout, y compris l'enregistrement du domaine, la configuration de l'hébergement, les certificats SSL et la maintenance continue. Vous obtenez une solution complète et prête à l'emploi.",
     },
     {
-      question: "What if I need changes after launch?",
+      question: "Mon site web fonctionnera-t-il sur les appareils mobiles?",
       answer:
-        "We offer ongoing support and maintenance packages. Small changes are included in our support plans, and larger updates can be handled through our development services.",
+        "Absolument. Tous nos sites web sont construits selon une approche mobile-first et sont responsives. Ils s'adaptent automatiquement à toute taille d'écran, des téléphones aux tablettes en passant par les ordinateurs de bureau.",
+    },
+    {
+      question: "Incluez-vous l'optimisation SEO?",
+      answer:
+        "Oui. Nous implémentons l'optimisation SEO sur page, les balises meta, les données structurées, et les optimisations de performance. Nous fournissons également des conseils sur la création de contenu et les stratégies de construction de liens.",
+    },
+    {
+      question: "Que faire si j'ai besoin de modifications après le lancement?",
+      answer:
+        "Nous offrons des packages de support et de maintenance continus. Les petites modifications sont incluses dans nos plans de support, et les mises à jour plus importantes peuvent être gérées via nos services de développement.",
     },
   ]
 
@@ -38,8 +38,8 @@ export default function FAQ() {
     <section className="relative py-24 px-4 overflow-hidden">
       <div className="max-w-4xl mx-auto">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow">Common Questions</h2>
-          <p className="text-lg text-slate-400">Quick answers about our website services</p>
+          <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow">Questions Fréquentes</h2>
+          <p className="text-lg text-slate-400">Réponses rapides sur nos services de site web</p>
         </div>
 
         {/* FAQ Items */}

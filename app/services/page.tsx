@@ -1,8 +1,17 @@
 'use client'
 
+import type { Metadata } from 'next'
 import { Palette, Code, Zap, Globe, ShoppingCart, Wrench, MapPin, Globe2, Search, Megaphone, Camera, Brain, Smartphone, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Footer from '@/components/sections/footer'
+import Link from 'next/link'
+import { SEO_MOROCCO, SEO_MALI } from '@/lib/seo'
+
+export const metadata: Metadata = {
+  title: 'Services | BiTech Digital',
+  description:
+    'Services web complets : création de site web, SEO, hébergement, e-commerce et maintenance pour les entreprises au Maroc et au Mali.',
+};
 
 export default function Services() {
   const maliServices = [
@@ -14,7 +23,7 @@ export default function Services() {
     {
       icon: Globe2,
       title: 'Création de Site Web',
-      description: 'Sites web modernes et responsives adaptés aux besoins des entreprises maliennes.',
+      description: 'Sites web modernes et responsives adaptés aux besoins des entreprises au Mali et au Maroc.',
     },
     {
       icon: Search,
@@ -39,57 +48,65 @@ export default function Services() {
     {
       icon: Smartphone,
       title: 'Applications Mobiles',
-      description: 'Apps mobiles natives ou hybrides pour iOS et Android adaptées au marché malien.',
+      description: 'Apps mobiles natives ou hybrides pour iOS et Android adaptées aux marchés du Mali et du Maroc.',
     },
     {
-      icon: Mail,
-      title: "Email Marketing",
-      description: 'Campagnes emailing automatisées et personnalisées pour fidéliser vos clients.',
+                <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                  Solutions de développement web complètes conçues pour créer, optimiser et maintenir votre présence en ligne.
+                </p>
+
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-6">
+                  {SEO_MOROCCO}
+                </p>
     },
   ]
 
   const services = [
     {
       icon: Palette,
-      title: 'Web Design & UI/UX',
-      description: 'Beautiful, user-centered website designs that engage visitors and drive conversions with modern aesthetics.',
-      features: ['Responsive Design', 'User Experience Optimization', 'Brand Identity', 'Prototyping & Wireframing']
+title: 'Design web & UI/UX',
+description: "Des conceptions de sites modernes centrées sur l’utilisateur, pensées pour captiver les visiteurs et augmenter les conversions grâce à un design actuel.",
+      features: ['Design responsive', 'Optimisation de l’expérience utilisateur', 'Identité de marque', 'Prototypage & wireframes']
     },
     {
       icon: Code,
-      title: 'Full-Stack Development',
-      description: 'Custom web applications built with cutting-edge technologies and best practices for performance and scalability.',
-      features: ['Frontend Development', 'Backend Development', 'Database Design', 'API Integration']
+title: 'Développement full-stack',
+      description: "Création d’applications web sur mesure avec des technologies modernes et les meilleures pratiques pour la performance et la scalabilité.",
+      features: ['Développement front-end', 'Développement back-end', 'Conception de base de données', 'Intégration API']
     },
     {
       icon: Zap,
-      title: 'SEO Optimization',
-      description: 'Improve your online visibility with comprehensive SEO strategies and technical optimization to rank higher.',
-      features: ['Keyword Research', 'On-page SEO', 'Technical SEO', 'Performance Optimization']
+title: 'Optimisation SEO',
+      description: 'Améliorez votre visibilité en ligne grâce à des stratégies SEO complètes et une optimisation technique pour mieux vous positionner.',
+      features: ['Recherche de mots-clés', 'SEO on-page', 'SEO technique', 'Optimisation des performances']
     },
     {
       icon: Globe,
-      title: 'Hosting & Deployment',
-      description: 'Reliable hosting solutions with automated deployment, backups, and 24/7 monitoring for your website.',
-      features: ['Cloud Hosting', 'SSL Certificates', 'Automated Backups', 'CDN Integration']
+title: "Hébergement & déploiement",
+      description:
+        "Des solutions d’hébergement fiables avec déploiement automatisé, sauvegardes et supervision 24/7 pour votre site web.",
+      features: ['Hébergement cloud', 'Certificats SSL', 'Sauvegardes automatisées', 'Intégration CDN']
     },
     {
       icon: ShoppingCart,
-      title: 'E-Commerce Solutions',
-      description: 'Complete online store setup with payment processing, inventory management, and customer analytics.',
-      features: ['Store Setup', 'Payment Integration', 'Inventory Management', 'Analytics Dashboard']
+title: "Solutions e-commerce",
+      description:
+        "Mise en place complète d’une boutique en ligne avec traitement des paiements, gestion du stock et analyses clients.",
+      features: ['Mise en place de la boutique', 'Intégration de paiement', 'Gestion du stock', 'Tableau de bord analytics']
     },
     {
       icon: Wrench,
-      title: 'Maintenance & Support',
-      description: 'Ongoing maintenance, updates, and technical support to keep your website running smoothly and securely.',
-      features: ['Regular Updates', 'Security Patches', 'Performance Monitoring', 'Technical Support']
+title: "Maintenance & support",
+      description:
+        "Maintenance continue, mises à jour et support technique pour assurer le bon fonctionnement et la sécurité de votre site web.",
+      features: ['Mises à jour régulières', 'Correctifs de sécurité', 'Suivi des performances', 'Support technique']
     },
-  ]
+                    Services <span className="text-accent">digitaux pour le Maroc et le Mali</span>
 
   return (
     <main className="relative bg-background text-foreground overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-4">{SEO_MALI}</p>
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
       </div>
@@ -99,10 +116,10 @@ export default function Services() {
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-semibold mb-6 ">
-              Our <span className="text-accent">Services</span>
+              Nos <span className="text-accent">Services</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive web development solutions designed to build, optimize, and maintain your online presence.
+              Solutions de développement web complètes conçues pour créer, optimiser et maintenir votre présence en ligne.
             </p>
           </div>
 
@@ -136,7 +153,7 @@ export default function Services() {
                   </div>
 
                   <Button className="bg-gradient-to-r from-primary to-accent text-background font-semibold  rounded-full w-full hover:shadow-lg ">
-                    Learn More
+En savoir plus
                   </Button>
                 </div>
               )
@@ -147,10 +164,10 @@ export default function Services() {
           <div className="mt-20 mb-20">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-semibold mb-6 neon-text-glow">
-                Services <span className="text-accent">digitaux pour le Mali</span>
+                Services <span className="text-accent">digitaux pour le Maroc et le Mali</span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Solutions digitales complètes adaptées au marché malien pour booster votre présence en ligne.
+                Solutions digitales complètes adaptées en fonction de votre pays pour booster votre présence en ligne.
               </p>
             </div>
 
@@ -184,12 +201,12 @@ export default function Services() {
 
           {/* CTA Section */}
           <div className="mt-20 bg-gradient-to-r from-primary/10 to-accent/10 border-2 border-primary/30 rounded-2xl p-12 text-center">
-            <h2 className="text-3xl font-semibold mb-4">Ready to Build Your Website?</h2>
+<h2 className="text-3xl font-semibold mb-4">Prêt à créer votre site web ?</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Let's schedule a free consultation to discuss your website vision and create the perfect solution for your needs.
+              Planifiez une consultation gratuite pour discuter de votre vision et construire la solution idéale pour vos besoins.
             </p>
             <Button className="bg-gradient-to-r from-primary to-accent text-background font-semibold  rounded-full px-8 ">
-              Schedule Consultation
+              <Link href="/join">Planifier une consultation</Link>
             </Button>
           </div>
         </section>

@@ -5,22 +5,22 @@ import { Star } from "lucide-react"
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Our new website increased leads by 300% in the first month. The design is stunning and conversion-focused.",
+      quote: "Notre nouveau site web a augmenté les leads de 300% le premier mois. Le design est impressionnant et axé sur les conversions.",
       author: "Sarah Chen",
-      role: "CEO, Local Business",
-      stats: "300% more leads",
+      role: "PDG, Entreprise Locale",
+      stats: "300% plus de leads",
     },
     {
-      quote: "The mobile-responsive design helped us reach customers on all devices. Sales have never been better.",
+      quote: "Le mobile-responsive design nous aide à avoir des clients sur tous les appareils. Vendre n'a jamais été si facile.",
       author: "Michael Rodriguez",
-      role: "Owner, E-commerce Store",
-      stats: "Mobile-first success",
+      role: "Propriétaire, Boutique E-commerce",
+      stats: "Succès mobile-first",
     },
     {
-      quote: "Professional website delivered in 2 weeks. SEO optimization brought us to page 1 of Google.",
+      quote: "Site web professionnel livré en 2 semaines. L'optimisation SEO nous a mis sur la page 1 de Google.",
       author: "Jennifer Lee",
-      role: "Founder, Startup Company",
-      stats: "2-week delivery",
+      role: "Fondateur de Startup",
+      stats: "Une visibilité accrue sur Google",
     },
   ]
 
@@ -28,9 +28,9 @@ export default function Testimonials() {
     <section className="relative py-24 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow">Trusted by Business Owners</h2>
+          <h2 className="text-4xl md:text-5xl font-semibold text-balance neon-text-glow">Confiance de nos clients</h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            See why businesses choose our website creation services
+            Découvrez pourquoi les entreprises nous choisissent
           </p>
         </div>
 

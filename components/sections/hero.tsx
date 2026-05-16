@@ -1,6 +1,6 @@
 "use client"
 
-import { Shield, Sparkles } from "lucide-react"
+import { Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import DashboardPreview from "@/components/dashboard-preview"
 import Link from "next/link"
@@ -20,43 +20,39 @@ export default function Hero() {
             {/* Decorative sparkle */}
             <div className="inline-flex items-center gap-2 text-accent/80">
               <Sparkles className="w-5 h-5" />
-              <span className="text-sm font-medium">Grow your business with Custom Websites</span>
+<span className="text-sm font-medium">Développez votre activité grâce à des sites sur mesure</span>
             </div>
 
             <div className="space-y-6">
               <h1 className="text-6xl lg:text-6xl font-semibold text-balance leading-tight neon-text-glow">
-                <span className="text-primary">Professional </span>
-
-                <span className="text-primary">Website Creation Services</span>
+                Créez un site web professionnel qui convertit
               </h1>
-             
-              <p className="text-xl text-muted-foreground  leading-relaxed">
-                Professional website creation services that build modern, responsive websites for your business.
-                Trusted by entrepreneurs and companies worldwide.
+              
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                BiTech Digital conçoit pour vous un site moderne, rapide et optimisé pour Google,
+                même avec un domaine Vercel gratuit. Attirez plus de clients au Maroc et au Mali
+                et transformez votre image en ligne.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button
-                size="lg"
-                className="bg-white text-black hover:bg-white/90 font-semibold rounded-full px-8 "
-              > 
-              <Link href="/join">
-                Join Us
+              <Link href="/contact" className="w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  className="w-full sm:w-auto bg-white text-black hover:bg-white/90 font-semibold rounded-full px-8"
+                >
+                  Contactez-nous
+                </Button>
               </Link>
-              </Button>
-              <Button
-                size="lg"
-              
-                className="border-2 border-accent bg-transparent rounded-full px-8 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm disabled:pointer-events-none disabled:opacity-50  focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-primary/90 h-10 has-[>svg]:px-4 bg-gradient-to-r from-primary to-accent text-background font-semibold hover:shadow-lg  cursor-pointer"
-              >
-                <Link href="/services">
-                Learn More
-                </Link>
-              </Button>
+              <Link href="/services" className="w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  className="w-full sm:w-auto border-2 border-accent bg-transparent rounded-full px-8 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm disabled:pointer-events-none disabled:opacity-50 focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-primary/90 h-10 has-[>svg]:px-4 bg-gradient-to-r from-primary to-accent text-background font-semibold hover:shadow-lg cursor-pointer"
+                >
+                  Voir les services
+                </Button>
+              </Link>
             </div>
-
-            <div className=" text-sm text-muted-foreground">With us Make more</div>
           </div>
 
           <div className="hidden lg:flex flex-col items-center gap-8">
