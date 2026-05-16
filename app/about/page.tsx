@@ -1,5 +1,3 @@
-'use client'
-
 import type { Metadata } from 'next'
 import { Shield, Award, Users, Zap } from 'lucide-react'
 import Footer from '@/components/sections/footer'

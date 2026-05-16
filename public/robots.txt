@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://danya-digital.vercel.app/sitemap.xml

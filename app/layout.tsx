@@ -9,6 +9,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://danya-digital.vercel.app"),
   title: "BiTech Digital | Création de site web professionnel Maroc & Mali",
   description:
     "Agence web spécialisée en création de sites professionnels, SEO local et visibilité Google au Maroc et au Mali. Sites responsives, rapides et optimisés pour convertir.",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],
     apple: "/apple-touch-icon.png",
-    manifest: "/site.webmanifest",
+    other: [{ rel: "manifest", url: "/site.webmanifest" }],
   },
 };
 
@@ -58,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className="dark">
       <body className={`font-sans antialiased`}>
-        <script
+        <script type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: `{
   "@context": "https://schema.org",
