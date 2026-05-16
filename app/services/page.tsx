@@ -1,11 +1,8 @@
-'use client'
-
 import type { Metadata } from 'next'
 import { Palette, Code, Zap, Globe, ShoppingCart, Wrench, MapPin, Globe2, Search, Megaphone, Camera, Brain, Smartphone, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Footer from '@/components/sections/footer'
 import Link from 'next/link'
-import { SEO_MOROCCO, SEO_MALI } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Services | BiTech Digital',
@@ -51,13 +48,9 @@ export default function Services() {
       description: 'Apps mobiles natives ou hybrides pour iOS et Android adaptées aux marchés du Mali et du Maroc.',
     },
     {
-                <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                  Solutions de développement web complètes conçues pour créer, optimiser et maintenir votre présence en ligne.
-                </p>
-
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-6">
-                  {SEO_MOROCCO}
-                </p>
+      icon: Wrench,
+      title: 'Support & formation',
+      description: 'Accompagnement continu, formation et support technique pour vous aider à gérer votre site et vos campagnes digitales.',
     },
   ]
 
@@ -96,17 +89,16 @@ title: "Solutions e-commerce",
     },
     {
       icon: Wrench,
-title: "Maintenance & support",
+      title: "Maintenance & support",
       description:
         "Maintenance continue, mises à jour et support technique pour assurer le bon fonctionnement et la sécurité de votre site web.",
       features: ['Mises à jour régulières', 'Correctifs de sécurité', 'Suivi des performances', 'Support technique']
     },
-                    Services <span className="text-accent">digitaux pour le Maroc et le Mali</span>
+  ]
 
   return (
     <main className="relative bg-background text-foreground overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-4">{SEO_MALI}</p>
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
       </div>

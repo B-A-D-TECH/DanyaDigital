@@ -27,7 +27,7 @@ export default function Hero() {
               <h1 className="text-6xl lg:text-6xl font-semibold text-balance leading-tight neon-text-glow">
                 Créez un site web professionnel qui convertit
               </h1>
-              
+
               <p className="text-xl text-muted-foreground leading-relaxed">
                 BiTech Digital conçoit pour vous un site moderne, rapide et optimisé pour Google,
                 même avec un domaine Vercel gratuit. Attirez plus de clients au Maroc et au Mali
