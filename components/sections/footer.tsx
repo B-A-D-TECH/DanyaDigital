@@ -1,9 +1,11 @@
 "use client"
 
-import { Github } from "lucide-react"
+import { Facebook, Github, Instagram, Linkedin } from "lucide-react"
 import Image from "next/image"
 
 export default function Footer() {
+
+
   return (
     <footer className="relative border-t border-slate-700/50 bg-slate-900/50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 py-16">
@@ -127,10 +129,40 @@ export default function Footer() {
               href="https://github.com/B-A-D-TECH"
               className="text-slate-400 hover:text-primary transition"
               aria-label="GitHub"
+              target="_blank"
+              rel="noreferrer"
             >
               <Github className="w-5 h-5" />
             </a>
+            <a
+              href="https://www.linkedin.com/groups/19613008"
+              className="text-slate-400 hover:text-primary transition"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.facebook.com/share/1HMbFm8Nm4/?mibextid=wwXIfr"
+              className="text-slate-400 hover:text-primary transition"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Facebook className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/bitechdigital_?utm_source=qr"
+              className="text-slate-400 hover:text-primary transition"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
           </div>
+
         </div>
       </div>
     </footer>
